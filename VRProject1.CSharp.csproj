@@ -104,6 +104,7 @@
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+    <Compile Include="Assets\CollideSound.cs" />
     <Compile Include="Assets\Floating.cs" />
     <Compile Include="Assets\FollowScript.cs" />
     <Compile Include="Assets\Movement.cs" />
