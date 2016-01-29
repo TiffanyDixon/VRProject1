@@ -26,24 +26,51 @@ namespace UnityStandardAssets.Vehicles.Car
 			float roll = CrossPlatformInputManager.GetAxis("Horizontal");
 			float pitch = CrossPlatformInputManager.GetAxis("Vertical");
 			bool airBrakes = CrossPlatformInputManager.GetButton("Fire1");
-			float throttle = airBrakes ? -1 : 1;
+			//float throttle = airBrakes ? -1 : 1;
+			float throttle;
+			float yaw;
+
+			bool r2= CrossPlatformInputManager.GetButton("R2");
+			bool l2 = CrossPlatformInputManager.GetButton ("L2");
+			if (l2)
+				throttle = -1;
+			if (r2)
+				throttle = 1;
+
+			if (r2 == l2)
+				throttle = 0;
 
 
-#if !MOBILE_INPUT
+			bool r1 = CrossPlatformInputManager.GetButton("R1");
+			bool l1 = CrossPlatformInputManager.GetButton ("L1");
+			if (l1)
+				yaw = -1;
+			if (r1)
+				yaw = 1;
+
+			if (r2 == l2)
+				yaw = 0;
+			
+			
+//#if !MOBILE_INPUT
             float handbrake = CrossPlatformInputManager.GetAxis("Jump");
             m_Car.Move(h, v, v, handbrake);
 
-			m_Car.Move(roll, pitch, 0, throttle, airBrakes);
-
+			m_Car.Move(roll, pitch, yaw, throttle, airBrakes);
+			/*
 #else
 			AdjustInputForMobileControls(ref roll, ref pitch, ref throttle);
 
             m_Car.Move(h, v, v, 0f);
-			m_Car.Move(roll, pitch, 0, throttle, airBrakes);
+			m_Car.Move(roll, pitch, 0, throttle, airBrakes);*/
 #endif
 			if (Input.GetKeyDown ("x")) {
 				m_Car.switchMode ();
 			}
+			if (CrossPlatformInputManager.GetButton("iOSx")) {
+				m_Car.switchMode ();
+			}
+			
 		
 		}
 
