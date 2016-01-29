@@ -7,6 +7,8 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
     public float distance;
     public GameObject treeHarry;
     public GameObject carHarry;
+    public GameObject spider;
+    public AudioClip TreeFallSound;
     void Start () {
         target = GameObject.FindWithTag("Player").transform; //target the player
         from = transform;
@@ -22,17 +24,25 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
     public Transform from;
     public Quaternion to;
     public float speed = 0.1F;
-    
+    public Camera playerCamera;
+
+
 
     // Update is called once per frame
-
-    void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.CompareTag("Player")) {
-            fallingDown = true;
-        }
-    }
     private bool fallingDown = false;
     private bool done = false;
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("Player") && !done) {
+            if (!fallingDown && !done) {
+                GetComponent<AudioSource>().PlayOneShot(TreeFallSound);
+            }
+            fallingDown = true;
+
+        }
+
+    }
+
+
     void Update () {
         if (fallingDown && !done) {
             transform.rotation = Quaternion.Lerp(from.rotation, to, Time.deltaTime * speed);
@@ -42,6 +52,8 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
             done = true;
             carHarry.SetActive(true);
             treeHarry.SetActive(false);
+            spider.SetActive(true);
+            playerCamera.transform.LookAt(spider.transform);
         }
         
     }
