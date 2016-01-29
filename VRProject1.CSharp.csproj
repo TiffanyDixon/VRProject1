@@ -57,12 +57,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -150,6 +144,7 @@
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\RiverBehavior.cs" />
+    <Compile Include="Assets\TreeFallWhenNearAndAddHaryPotterToCar.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\Heightmapbuilder.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\Helpers\Threading.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\TerrainFoliage.cs" />

@@ -9,6 +9,7 @@ public class FollowScript : MonoBehaviour {
 	public bool flying = true; //If gravity is on, this is genrally move like jumping as long as movement speed is less than 10ish
 	public float minDistanceFollow = .5f;
 	public float maxDistanceFollow = 100f;
+    public string targetTag;
 
 	public Transform myTransform; //current transform data of this enemy
 
@@ -19,7 +20,7 @@ public class FollowScript : MonoBehaviour {
 
 	void Start()
 	{
-		target = GameObject.FindWithTag("Player").transform; //target the player
+		target = GameObject.FindWithTag(targetTag).transform; //target the target
 
 	}
 
