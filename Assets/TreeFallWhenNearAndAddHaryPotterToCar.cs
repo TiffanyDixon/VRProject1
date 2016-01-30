@@ -32,6 +32,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
     public GameObject gateRight;
     public AudioClip TreeFallSound;
     private RotateHelper treeRotate;
+    private Collider meshCollider;
     private System.Collections.Generic.List<RotateHelper> gateRotators;
 
     void Start () {
@@ -40,6 +41,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
         gateRotators = new System.Collections.Generic.List<RotateHelper>();
         gateRotators.Add(new RotateHelper(gateLeft, new Vector3(-90, 0, 0),speed/2));
         gateRotators.Add(new RotateHelper(gateRight, new Vector3(-90, 0, 0), speed/2));
+        meshCollider = GetComponent<Collider>();
 
         //Rather than copy pasting the same line, should really put some of these in a utility class.
         //But that'd take time. 
@@ -81,6 +83,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
             done = true;
             carHarry.SetActive(true);
             treeHarry.SetActive(false);
+            meshCollider.enabled = false;
         }
         
     }
