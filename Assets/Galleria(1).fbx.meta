@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 32947051da1035c488694ce651cf145d
+timeCreated: 1454199641
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Caution
+    100002: //RootNode
+    100004: Point
+    100006: Railway
+    100008: Ringhiere
+    100010: Step_2
+    100012: Sun
+    100014: Terrain
+    100016: Tunnel
+    400000: Caution
+    400002: //RootNode
+    400004: Point
+    400006: Railway
+    400008: Ringhiere
+    400010: Step_2
+    400012: Sun
+    400014: Terrain
+    400016: Tunnel
+    2300000: Caution
+    2300002: Railway
+    2300004: Ringhiere
+    2300006: Step_2
+    2300008: Terrain
+    2300010: Tunnel
+    3300000: Caution
+    3300002: Railway
+    3300004: Ringhiere
+    3300006: Step_2
+    3300008: Terrain
+    3300010: Tunnel
+    4300000: Tunnel
+    4300002: Caution
+    4300004: Railway
+    4300006: Ringhiere
+    4300008: Terrain
+    4300010: Step_2
+    7400000: Tunnel|Caution|Take 001|BaseLayer
+    7400002: Tunnel|Railing_2|Take 001|BaseLayer
+    7400004: Tunnel|Railing|Take 001|BaseLayer
+    7400006: Tunnel|Railway_1|Take 001|BaseLayer
+    7400008: Tunnel|Railway|Take 001|BaseLayer
+    7400010: Tunnel|Step_2|Take 001|BaseLayer
+    7400012: Tunnel|Step|Take 001|BaseLayer
+    7400014: Tunnel|Terrain|Take 001|BaseLayer
+    7400016: Tunnel|Tunnel|Take 001|BaseLayer
+    7400018: Caution|Caution|Take 001|BaseLayer
+    7400020: Caution|Railing_2|Take 001|BaseLayer
+    7400022: Caution|Railing|Take 001|BaseLayer
+    7400024: Caution|Railway_1|Take 001|BaseLayer
+    7400026: Caution|Railway|Take 001|BaseLayer
+    7400028: Caution|Step_2|Take 001|BaseLayer
+    7400030: Caution|Step|Take 001|BaseLayer
+    7400032: Caution|Terrain|Take 001|BaseLayer
+    7400034: Caution|Tunnel|Take 001|BaseLayer
+    7400036: Railway|Caution|Take 001|BaseLayer
+    7400038: Railway|Railing_2|Take 001|BaseLayer
+    7400040: Railway|Railing|Take 001|BaseLayer
+    7400042: Railway|Railway_1|Take 001|BaseLayer
+    7400044: Railway|Railway|Take 001|BaseLayer
+    7400046: Railway|Step_2|Take 001|BaseLayer
+    7400048: Railway|Step|Take 001|BaseLayer
+    7400050: Railway|Terrain|Take 001|BaseLayer
+    7400052: Railway|Tunnel|Take 001|BaseLayer
+    7400054: Terrain|Caution|Take 001|BaseLayer
+    7400056: Terrain|Railing_2|Take 001|BaseLayer
+    7400058: Terrain|Railing|Take 001|BaseLayer
+    7400060: Terrain|Railway_1|Take 001|BaseLayer
+    7400062: Terrain|Railway|Take 001|BaseLayer
+    7400064: Terrain|Step_2|Take 001|BaseLayer
+    7400066: Terrain|Step|Take 001|BaseLayer
+    7400068: Terrain|Terrain|Take 001|BaseLayer
+    7400070: Terrain|Tunnel|Take 001|BaseLayer
+    7400072: Step_2|Caution|Take 001|BaseLayer
+    7400074: Step_2|Railing_2|Take 001|BaseLayer
+    7400076: Step_2|Railing|Take 001|BaseLayer
+    7400078: Step_2|Railway_1|Take 001|BaseLayer
+    7400080: Step_2|Railway|Take 001|BaseLayer
+    7400082: Step_2|Step_2|Take 001|BaseLayer
+    7400084: Step_2|Step|Take 001|BaseLayer
+    7400086: Step_2|Terrain|Take 001|BaseLayer
+    7400088: Step_2|Tunnel|Take 001|BaseLayer
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

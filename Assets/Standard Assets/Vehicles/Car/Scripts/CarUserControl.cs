@@ -31,21 +31,23 @@ namespace UnityStandardAssets.Vehicles.Car
 
 
             float yaw = 0;
-            float throttle = CrossPlatformInputManager.GetAxis("Triggers")*-1;
-            /* For xbox its an axis
+            //float throttle = CrossPlatformInputManager.GetAxis("Triggers")*-1;
+             //For xbox its an axis
 
-            float throttle = 0;
-            bool r2 = CrossPlatformInputManager.GetButton("R2");
-            bool l2 = CrossPlatformInputManager.GetButton("L2");
-
+            //float throttle = 0;
+			float r2 = CrossPlatformInputManager.GetAxis("R2");
+			float l2 = CrossPlatformInputManager.GetAxis("L2");
+			/*
             if (l2)
                 throttle = -1;
             if (r2)
                 throttle = 1;
 
             if (r2 == l2)
-                throttle = 0;
-                */
+                throttle = 0;*/
+
+			float throttle = r2 - l2;
+                
 
             bool r1 = CrossPlatformInputManager.GetButton("R1");
             bool l1 = CrossPlatformInputManager.GetButton("L1");
