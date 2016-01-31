@@ -159,6 +159,7 @@
     <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
     <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
     <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
+    <None Include="Assets\FlipNormals.shader" />
     <None Include="Assets\Forest Grounds - Terrain Texture Pack\Readme.txt" />
     <None Include="Assets\Fortress Gate_Free\ReadMe.txt" />
     <None Include="Assets\NatureStarterKit2\info.txt" />
