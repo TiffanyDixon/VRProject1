@@ -108,6 +108,7 @@
     <Compile Include="Assets\CollideSound.cs" />
     <Compile Include="Assets\Floating.cs" />
     <Compile Include="Assets\FollowScript.cs" />
+    <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Movement.cs" />
     <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\NewBehaviourScript1.cs" />
@@ -167,6 +168,9 @@
     <None Include="Assets\FlipNormals.shader" />
     <None Include="Assets\Forest Grounds - Terrain Texture Pack\Readme.txt" />
     <None Include="Assets\Fortress Gate_Free\ReadMe.txt" />
+    <None Include="Assets\Lava_Flowing_Shader\ReadMe.txt" />
+    <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
+    <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
     <None Include="Assets\NatureStarterKit2\info.txt" />
     <None Include="Assets\PBS Materials Variety Pack\readme.txt" />
     <None Include="Assets\PB_Spider\readme.txt" />
