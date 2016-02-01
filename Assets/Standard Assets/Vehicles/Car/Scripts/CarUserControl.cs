@@ -5,8 +5,12 @@ using UnityStandardAssets.CrossPlatformInput;
 namespace UnityStandardAssets.Vehicles.Car
 {
     [RequireComponent(typeof (CarController))]
+
+    
     public class CarUserControl : MonoBehaviour
     {
+        public bool latch = true;
+
         private CarController m_Car; // the car controller we want to use
 
 
@@ -60,6 +64,16 @@ namespace UnityStandardAssets.Vehicles.Car
           
 
             m_Car.Move(h, v, yaw, throttle, brakes);
+
+            if(CrossPlatformInputManager.GetButton("Fire3") && latch)
+            {
+                m_Car.switchMode();
+                latch = false;
+            }
+            else
+            {
+                latch = true;
+            }
 
 
             //#else

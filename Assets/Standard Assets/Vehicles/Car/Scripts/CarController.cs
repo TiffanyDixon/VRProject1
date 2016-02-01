@@ -125,9 +125,11 @@ namespace UnityStandardAssets.Vehicles.Car
 
 			if (planeMode) {
 				m_Rigidbody.mass = planeWeight;
-			} else {
+                m_Rigidbody.useGravity = false;
+            } else {
 				m_Rigidbody.mass = carWeight;
-			}
+                m_Rigidbody.useGravity = true;
+            }
 		}
 
 
@@ -539,9 +541,11 @@ namespace UnityStandardAssets.Vehicles.Car
 
 			if (planeMode) {
 				m_Rigidbody.mass = planeWeight;
+                m_Rigidbody.useGravity = true;
 			} else {
 				m_Rigidbody.mass = carWeight;
-			}
+                m_Rigidbody.useGravity = false;
+            }
 		}
 
 		private void CalculateDrag()
