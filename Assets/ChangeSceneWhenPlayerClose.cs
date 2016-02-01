@@ -14,7 +14,7 @@ public class ChangeSceneWhenPlayerClose : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	    if ( Vector3.Distance(myTransform.position,target.position) < 50 ) {
-            SceneManager.LoadScene("TrainScene");
+            SceneManager.LoadScene("scene2.2");
         }
 	}
 }
