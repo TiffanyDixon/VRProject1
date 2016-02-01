@@ -121,6 +121,7 @@
     <Compile Include="Assets\Movement.cs" />
     <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\NewBehaviourScript1.cs" />
+    <Compile Include="Assets\PickupItem.cs" />
     <Compile Include="Assets\PlanePilot.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Bloom.cs" />
