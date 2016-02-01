@@ -9,7 +9,7 @@ namespace UnityStandardAssets.Vehicles.Car
     
     public class CarUserControl : MonoBehaviour
     {
-        public bool latch = true;
+        public bool latch = false;
 
         private CarController m_Car; // the car controller we want to use
 
@@ -65,14 +65,22 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Car.Move(h, v, yaw, throttle, brakes);
 
-            if(CrossPlatformInputManager.GetButton("Fire3") && latch)
+
+
+
+            if(CrossPlatformInputManager.GetButton("Fire3"))
             {
-                m_Car.switchMode();
-                latch = false;
+
+                if (!latch)
+                {
+                    m_Car.switchMode();
+                    latch = false;
+                }
+                latch = true;
             }
             else
             {
-                latch = true;
+                latch = false;
             }
 
 

@@ -15,7 +15,7 @@ public class PickupItem : MonoBehaviour
     {
 
     }
-
+    /*
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -23,5 +23,5 @@ public class PickupItem : MonoBehaviour
             Destroy(other.gameObject);
             //ItemsCollected++;
         }
-    }
+    }*/
 }
