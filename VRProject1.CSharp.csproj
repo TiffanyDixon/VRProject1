@@ -112,6 +112,7 @@
     <Compile Include="Assets\DissapearAftercollide.cs" />
     <Compile Include="Assets\Floating.cs" />
     <Compile Include="Assets\FollowScript.cs" />
+    <Compile Include="Assets\ForceCarTofly.cs" />
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Movement.cs" />
     <Compile Include="Assets\NewBehaviourScript.cs" />

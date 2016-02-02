@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ForceCarTofly : MonoBehaviour {
 
@@ -9,6 +9,7 @@ public class ForceCarTofly : MonoBehaviour {
     public float range;
     public GameObject car;
     private UnityStandardAssets.Vehicles.Car.CarController controller;
+    private bool didIt = false;
     // Use this for initialization
     void Start()
     {
@@ -19,11 +20,17 @@ public class ForceCarTofly : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(myTransform.position, target.position) < range)
+        if (!didIt)
         {
-            Debug.Log("Switching car modes");
-          controller =   car.GetComponent<UnityStandardAssets.Vehicles.Car.CarController>();
-            controller.switchMode();
+            if (Vector3.Distance(myTransform.position, target.position) < range)
+            {
+                didIt = true;
+                Debug.Log("Switching car modes");
+                controller = car.GetComponent<UnityStandardAssets.Vehicles.Car.CarController>();
+
+                controller.switchMode();
+            }
         }
+    
     }
 }   
