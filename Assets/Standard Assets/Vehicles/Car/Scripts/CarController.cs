@@ -162,6 +162,8 @@ namespace UnityStandardAssets.Vehicles.Car
             else {
                 m_Rigidbody.mass = carWeight;
                 m_Rigidbody.useGravity = true;
+
+                m_Rigidbody.velocity.Set(0, 0, 50);
             }
         }
 
