@@ -37,7 +37,7 @@ namespace UnityStandardAssets.Vehicles.Car
             float r2 = CrossPlatformInputManager.GetAxis("R2");
             float l2 = CrossPlatformInputManager.GetAxis("L2");
 
-            float throttle = r2 - l2;
+            float throttle = -r2;// - l2;
 
             
 
