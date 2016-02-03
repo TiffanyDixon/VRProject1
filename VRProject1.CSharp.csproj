@@ -60,6 +60,15 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -118,6 +127,14 @@
     <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\PickupItem.cs" />
     <Compile Include="Assets\PlanePilot.cs" />
+    <Compile Include="Assets\PyroParticles\Demo\DemoScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Bloom.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -158,12 +175,21 @@
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\RiverBehavior.cs" />
     <Compile Include="Assets\TrainMoving.cs" />
+    <Compile Include="Assets\Trainpath.cs" />
     <Compile Include="Assets\TreeFallWhenNearAndAddHaryPotterToCar.cs" />
+    <Compile Include="Assets\WayPoint.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\Heightmapbuilder.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\Helpers\Threading.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\TerrainFoliage.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\TerrainGeneration.cs" />
     <Compile Include="Assets\WorldBuilder\Scripts\TerrainTexturing.cs" />
+    <Compile Include="Assets\iTweenEditor\Examples\StartAndStopTween.cs" />
+    <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
+    <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
+    <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
+    <Compile Include="Assets\iTweenEditor\iTween.cs" />
+    <Compile Include="Assets\iTweenEditor\iTweenEvent.cs" />
+    <Compile Include="Assets\iTweenEditor\iTweenPath.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
@@ -181,6 +207,9 @@
     <None Include="Assets\PBS Materials Variety Pack\readme.txt" />
     <None Include="Assets\PB_Spider\readme.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
+    <None Include="Assets\PyroParticles\Readme.txt" />
     <None Include="Assets\Realistic Terrain Collection\Other\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
@@ -273,6 +302,7 @@
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+    <None Include="Assets\iTweenEditor\README.txt" />
     <None Include="Assets\laxer Assets\creek\Shaders\HeightBlendx5.shader" />
     <None Include="Assets\laxer Assets\creek\Shaders\RunningWater.shader" />
     <None Include="Assets\laxer Assets\creek\Shaders\RunningWaterSimple.shader" />

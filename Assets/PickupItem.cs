@@ -15,13 +15,13 @@ public class PickupItem : MonoBehaviour
     {
 
     }
-    /*
-    void OnCollisionEnter(Collision other)
+
+    void OnTriggerEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(other.gameObject);
-            //ItemsCollected++;
+            
         }
-    }*/
+    }
 }
