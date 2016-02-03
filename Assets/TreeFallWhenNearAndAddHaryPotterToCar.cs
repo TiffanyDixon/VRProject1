@@ -75,9 +75,6 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
             foreach(RotateHelper rot in gateRotators) {
                 rot.doRotateStep();
             }
-
-            //Todo, refactor this into a class, then go through list of class and call rotate on each one, each class will hold the appropriate few vars.
-
         }
 
         if (treeRotate.isDone()  && fallingDown) {
