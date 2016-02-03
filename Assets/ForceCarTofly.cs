@@ -10,6 +10,7 @@ public class ForceCarTofly : MonoBehaviour {
     public GameObject car;
     private UnityStandardAssets.Vehicles.Car.CarController controller;
     private bool didIt = false;
+    public AudioClip Leviosa;
     // Use this for initialization
     void Start()
     {
@@ -27,7 +28,7 @@ public class ForceCarTofly : MonoBehaviour {
                 didIt = true;
                 Debug.Log("Switching car modes");
                 controller = car.GetComponent<UnityStandardAssets.Vehicles.Car.CarController>();
-
+                GetComponent<AudioSource>().PlayOneShot(Leviosa);
                 controller.switchMode();
             }
         }
