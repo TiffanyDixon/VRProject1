@@ -162,6 +162,8 @@ namespace UnityStandardAssets.Vehicles.Car
             else {
                 m_Rigidbody.mass = carWeight;
                 m_Rigidbody.useGravity = true;
+
+                m_Rigidbody.velocity.Set(0, 0, 50);
             }
         }
 
@@ -598,7 +600,7 @@ namespace UnityStandardAssets.Vehicles.Car
             // Air brakes work by directly modifying drag. This part is actually pretty realistic!
             m_Rigidbody.drag = (AirBrakes ? (m_OriginalDrag + extraDrag) * m_AirBrakesEffect : m_OriginalDrag + extraDrag);
             // Forward speed affects angular drag - at high forward speed, it's much harder for the plane to spin
-            m_Rigidbody.angularDrag = m_OriginalAngularDrag * ForwardSpeed;
+            m_Rigidbody.angularDrag = m_OriginalAngularDrag * ForwardSpeed*3;
         }
 
 
