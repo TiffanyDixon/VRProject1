@@ -78,7 +78,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
             }
         }
 
-        if (treeRotate.isDone()  && fallingDown) {
+        if (treeRotate.isDone()  && fallingDown && !done) {
             done = true;
             carHarry.SetActive(true);
             treeHarry.SetActive(false);
