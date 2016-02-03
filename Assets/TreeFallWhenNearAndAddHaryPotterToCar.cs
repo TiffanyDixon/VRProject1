@@ -70,6 +70,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
 
     void Update () {
         if (fallingDown && !done) {
+            meshCollider.enabled = false;
             treeRotate.doRotateStep();
             foreach(RotateHelper rot in gateRotators) {
                 rot.doRotateStep();
@@ -83,7 +84,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
             done = true;
             carHarry.SetActive(true);
             treeHarry.SetActive(false);
-            meshCollider.enabled = false;
+            
         }
         
     }
