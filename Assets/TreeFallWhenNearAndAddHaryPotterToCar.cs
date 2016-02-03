@@ -31,6 +31,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
     public GameObject gateLeft;
     public GameObject gateRight;
     public AudioClip TreeFallSound;
+    public AudioClip ZeldaSuccess;
     private RotateHelper treeRotate;
     private Collider meshCollider;
     private System.Collections.Generic.List<RotateHelper> gateRotators;
@@ -81,6 +82,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
             done = true;
             carHarry.SetActive(true);
             treeHarry.SetActive(false);
+            GetComponent<AudioSource>().PlayOneShot(ZeldaSuccess);
             
         }
         

@@ -48,7 +48,7 @@ public class FenceFallOnHit : MonoBehaviour {
     void Update () {
         if (fallingDown && !done) {
             rotator.doRotateStep();
-            StartCoroutine(TurnIntangibleAfterTime(1f));
+            StartCoroutine(TurnIntangibleAfterTime(.3f));
 
         }
 
