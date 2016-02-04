@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
@@ -9,8 +10,8 @@ namespace UnityStandardAssets.Vehicles.Car
     
     public class CarUserControl : MonoBehaviour
     {
-        public bool latch = false;
-
+        private bool latch = false;
+        public string sceneToSwitchTo="";
         private CarController m_Car; // the car controller we want to use
 
 
@@ -85,6 +86,10 @@ namespace UnityStandardAssets.Vehicles.Car
                 latch = false;
             }
 
+            if(CrossPlatformInputManager.GetButton("Start"))
+                {
+                SceneManager.LoadScene(sceneToSwitchTo);
+            }
 
             //#else
             //          m_Car.Move(h, v, v, 0f);
