@@ -24,17 +24,8 @@ public class PickupItem : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Pickup-Glasses"))
-        {
-            other.gameObject.SetActive(false);
-            ++ItemsCollected;
-        }
-        if (other.gameObject.CompareTag("Pickup-Wand"))
-        {
-            other.gameObject.SetActive(false);
-            ++ItemsCollected;
-        }
-        if (other.gameObject.CompareTag("Pickup-SpellBook"))
+        Debug.Log("Hermione");
+        if (other.gameObject.CompareTag("Pickup"))
         {
             other.gameObject.SetActive(false);
             ++ItemsCollected;
@@ -43,6 +34,7 @@ public class PickupItem : MonoBehaviour
         {
             sittingHermione.SetActive(true);
         }
+        moveToScene3();
     }
 
     void Hermione()
