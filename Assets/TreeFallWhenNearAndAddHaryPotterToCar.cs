@@ -31,6 +31,7 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
     public GameObject gateLeft;
     public GameObject gateRight;
     public AudioClip TreeFallSound;
+    public AudioClip ZeldaSuccess;
     private RotateHelper treeRotate;
     private Collider meshCollider;
     private System.Collections.Generic.List<RotateHelper> gateRotators;
@@ -70,22 +71,25 @@ public class TreeFallWhenNearAndAddHaryPotterToCar : MonoBehaviour {
 
     void Update () {
         if (fallingDown && !done) {
-            meshCollider.enabled = false;
+            StartCoroutine(TurnIntangibleAfterTime());
             treeRotate.doRotateStep();
             foreach(RotateHelper rot in gateRotators) {
                 rot.doRotateStep();
             }
-
-            //Todo, refactor this into a class, then go through list of class and call rotate on each one, each class will hold the appropriate few vars.
-
         }
 
-        if (treeRotate.isDone()  && fallingDown) {
+        if (treeRotate.isDone()  && fallingDown && !done) {
             done = true;
             carHarry.SetActive(true);
             treeHarry.SetActive(false);
+            GetComponent<AudioSource>().PlayOneShot(ZeldaSuccess);
             
         }
         
+    }
+    public float turnIntangibleAfter;
+    IEnumerator TurnIntangibleAfterTime() {
+        yield return new WaitForSeconds(turnIntangibleAfter);
+        meshCollider.enabled = false;
     }
 }

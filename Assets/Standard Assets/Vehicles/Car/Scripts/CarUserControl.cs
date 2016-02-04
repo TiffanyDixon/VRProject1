@@ -61,10 +61,10 @@ namespace UnityStandardAssets.Vehicles.Car
 
             float handbrake = CrossPlatformInputManager.GetAxis("Fire1");
 
-            throttle = throttle * Time.deltaTime * 850;
+            //throttle = throttle * Time.deltaTime * 850;
 
 
-            m_Car.Move(h, throttle, throttle, handbrake);
+            m_Car.Move(h, throttle, throttle, 0);// handbrake);
           
 
             m_Car.Move(yaw, v, h, throttle, brakes);
