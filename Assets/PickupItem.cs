@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PickupItem : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class PickupItem : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        updateText();
     }
 
     // Update is called once per frame
@@ -15,12 +16,24 @@ public class PickupItem : MonoBehaviour
     {
 
     }
+    void updateText() {
+        int remaining = 4 - ItemsCollected;
+        if (remaining != 0) {
+            scoreTextL.text = "Need " + (remaining) + " More Items!!";
+           // scoreTextR.text = "RNeed " + (remaining) + " More Items!!";
+        } else {
+            scoreTextL.text = "You got it all! Go to the tunnel!";
+            //scoreTextR.text = "You got it all! Go to the tunnel!";
+        }
+    }
 
     public GameObject standingHermione;
     public GameObject sittingHermione;
     public GameObject activateCube;
     public int ItemsCollected;
     public bool hasCollided = false;
+    public Text scoreTextL;
+    //public Text scoreTextR;
 
     void OnCollisionEnter(Collision other)
     {
@@ -34,6 +47,7 @@ public class PickupItem : MonoBehaviour
         {
             sittingHermione.SetActive(true);
         }
+        updateText();
         moveToScene3();
     }
 
