@@ -60,15 +60,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -119,7 +110,9 @@
     <Compile Include="Assets\ChangeSceneWhenPlayerClose.cs" />
     <Compile Include="Assets\CollideSound.cs" />
     <Compile Include="Assets\DissapearAftercollide.cs" />
+    <Compile Include="Assets\EndScenePath.cs" />
     <Compile Include="Assets\ExitToScene3.cs" />
+    <Compile Include="Assets\FenceFallOnHit.cs" />
     <Compile Include="Assets\Floating.cs" />
     <Compile Include="Assets\FollowScript.cs" />
     <Compile Include="Assets\ForceCarTofly.cs" />
@@ -176,6 +169,8 @@
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\RiverBehavior.cs" />
+    <Compile Include="Assets\SpiderMove.cs" />
+    <Compile Include="Assets\TrainMoveLastScene.cs" />
     <Compile Include="Assets\TrainMoving.cs" />
     <Compile Include="Assets\Trainpath.cs" />
     <Compile Include="Assets\TreeFallWhenNearAndAddHaryPotterToCar.cs" />
